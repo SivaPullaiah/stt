@@ -1,5 +1,5 @@
 /* Write a C program, which takes two integer operands and one operator form the user,
-   performs the operation and then prints the result.
+   performs the operation and then prints the result. 
    (Consider the operators +,-,*, /, % and use Switch Statement)
 */
 
@@ -31,41 +31,37 @@ scanf("%d%d",&a,&b);
 
 switch(ch)
 {
- case 1:
+ case1:
  res=a+b;
  printf("\n Addition:%d",res);
- break;                                                //logical error break was placed
 
- case 2:
+
+ case2:
  res=a-b;
  printf("\n Subtraction:%d",res);
- break;                                                //logical error break was placed
 
- case 3:
+ case3:
  res=a*b;
  printf("\n Multiplication:%d",res);
- break;                                                //logical error break was placed
+ 
 
-
- case 4:
+ case4
  res=a/b;
  printf("\n Division:%d",res);
- break;                                                //logical error break was placed
 
 
- case 5:
+ case5:
  res=a%b;
  printf("\n Remainder:%d",res);
- break;                                                //logical error break was placed
+ 
 
- case 0:
+ case0:
  printf("\n Choice Terminated");
  exit();
 
 
  default:
  printf("\n Invalid Choice");
- }                                                          //compound statement placed
 
 getch();
 }
