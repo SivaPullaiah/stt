@@ -4,17 +4,17 @@
 #include<conio.h>
 
 void main()
-{
-  int num, k=1, sum=0;
+  int num k=1, sum=0;
   clrscr();
   printf("Enter the number whose digits are to be added:");
-  scanf("%d",&num);
+  scanf("%d",num);
 while(num!=0)
 {
   k=num%10;
   sum=sum+k;
-  num=num/10;
+  k=num%10;
+  num=k;
 }
-printf("Sum of the digits:%d",sum);
+printf("Sum of the digits:%d",&sum);
 getch();
 }
