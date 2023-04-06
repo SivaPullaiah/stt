@@ -1,0 +1,6 @@
+5a
+Window("Flight Reservation").Activate
+Window("Flight Reservation").WinMenu("Menu").Select "File;Open Order..."
+Window("Flight Reservation").Dialog("Open Order").WinCheckBox("Order No.").Set "ON"
+Window("Flight Reservation").Dialog("Open Order").WinEdit("Edit").Set "5"
+Window("Flight Reservation").Dialog("Open Order").WinButton("OK").Click
