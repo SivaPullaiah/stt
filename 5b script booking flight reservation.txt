@@ -1,0 +1,11 @@
+5b
+Window("Flight Reservation").Activate
+Window("Flight Reservation").WinMenu("Menu").Select "File;New Order"
+Window("Flight Reservation").ActiveX("MaskEdBox").Type "040723"
+Window("Flight Reservation").WinComboBox("Fly From:").Select "Denver"
+Window("Flight Reservation").WinComboBox("Fly To:").Select "Frankfurt"
+Window("Flight Reservation").WinButton("FLIGHT").Click
+Window("Flight Reservation").Dialog("Flights Table").WinList("From").Select "15932   DEN   02:09 PM   FRA   02:53 PM   NW     $179.47"
+Window("Flight Reservation").Dialog("Flights Table").WinButton("OK").Click
+Window("Flight Reservation").WinEdit("Name:").Set "SIva"
+Window("Flight Reservation").WinButton("Insert Order").Click
