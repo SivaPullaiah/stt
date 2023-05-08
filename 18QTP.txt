@@ -1,0 +1,5 @@
+n=Window("Flight Reservation").WinComboBox("Fly From:").GetItemsCount
+For i=0 to n-1
+	x=Window("Flight Reservation").WinComboBox("Fly From:").GetItem(i)
+	print i &space(u) & "IndexItem" &space(u) &n
+Next
